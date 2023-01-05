@@ -1,4 +1,8 @@
 /* Universal Styles */
+@font-face {
+  font-family: 'Palatino';
+  src: url('../fonts/palatin.ttf') format('truetype');
+}  
 
 html {
   font-family: "Roboto", sans-serif;
@@ -254,7 +258,7 @@ header .mobile {
 }
 
 .feature .image-container {
-  max-width: 90%;
+  width: 90%;
   height: 65%;
   margin: 0 auto;
 }
@@ -263,6 +267,12 @@ header .mobile {
   height: auto;
   margin: 0 auto;
   display: block;
+  padding-bottom: 2.5rem;
+}
+
+.feature .content {
+  margin-top: 1.25x;
+  margin-bottom: 1.25;
 }
 
 .feature h2 {
@@ -270,6 +280,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
@@ -314,12 +325,14 @@ header .mobile {
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
+  
 }
 
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -332,6 +345,13 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  overflow: hidden;
+}
+#filters-section .images-container img {
+  max-width: 100%;
+  padding: 0 1%;
+  height: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -370,20 +390,20 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+.quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: 'Palatino', serif;
   font-size: 1.875rem;
-  line-height: 1.1;
   font-style: italic;
+  line-height: 1.1;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
